@@ -1,0 +1,10 @@
+{
+    "default": "/home/artuu/.valet/Sites/dashboard",
+    "domain": "test",
+    "paths": [
+        "/home/artuu/.valet/Sites",
+        "/home/artuu/Workspace/Sites",
+        "/mnt/c/Users/artuu/Documents/GitHub"
+    ],
+    "port": "80"
+}
