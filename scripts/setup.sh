@@ -6,7 +6,7 @@ echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
 
 # Sets the DNS server
 sudo rm -rf "/etc/resolv.conf"
-cat << "EOF" | sudo tee /etc/resolv.conf
+sudo tee /etc/resolv.conf << "EOF"
 nameserver 1.1.1.2
 nameserver 1.0.0.2
 EOF
