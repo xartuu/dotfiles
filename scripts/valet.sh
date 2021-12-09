@@ -26,7 +26,7 @@ ln -snf "$DOTFILES/configs/valet.json" "$HOME/.valet/config.json"
 
 
 # Instals Valet Dashboard
-export VALET_DASHBOARD="$HOME/.valet/Sites/dashboard"
+export VALET_DASHBOARD="$HOME/.valet/Dashboard"
 git clone https://github.com/xartuu/valet-dashboard "$VALET_DASHBOARD"
 
 

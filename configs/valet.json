@@ -1,5 +1,5 @@
 {
-    "default": "/home/artuu/.valet/Sites/dashboard",
+    "default": "/home/artuu/.valet/Dashboard",
     "domain": "test",
     "paths": [
         "/home/artuu/.valet/Sites",
