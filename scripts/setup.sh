@@ -10,6 +10,9 @@ sudo tee /etc/resolv.conf << "EOF"
 nameserver 1.1.1.2
 nameserver 1.0.0.2
 EOF
+# Makes the file immutable and won't be overwritten next time you start wsl
+# Use `sudo chattr -i /etc/resolv.conf` to edit this file again
+sudo chattr +i /etc/resolv.conf 
 
 
 # Updates and installs basic packages
