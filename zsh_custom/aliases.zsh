@@ -15,8 +15,9 @@ alias .....="cd ../../../.."
 alias home="cd $HOME"
 alias ~="cd $HOME"
 alias -- -="cd -"
-alias sites="cd $HOME/Workspace/Sites"
-alias projects="cd $HOME/Workspace/Projects"
+alias dev="cd $HOME/dev"
+alias sites="cd $HOME/dev/Sites"
+alias projects="cd $HOME/dev/Projects"
 
 
 # PHP

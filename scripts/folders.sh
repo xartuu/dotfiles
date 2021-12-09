@@ -1,4 +1,4 @@
 #!/bin/sh
 
-mkdir -p "$HOME/Workspace/Sites"
-mkdir -p "$HOME/Workspace/Projects"
+mkdir -p "$HOME/dev/Sites"
+mkdir -p "$HOME/dev/Projects"

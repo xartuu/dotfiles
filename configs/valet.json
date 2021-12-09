@@ -3,7 +3,7 @@
     "domain": "test",
     "paths": [
         "/home/artuu/.valet/Sites",
-        "/home/artuu/Workspace/Sites",
+        "/home/artuu/dev/Sites",
         "/mnt/c/Users/artuu/Documents/GitHub"
     ],
     "port": "80"
