@@ -5,6 +5,7 @@ sudo apt-get install -y network-manager
 sudo apt-get install -y libnss3-tools
 sudo apt-get install -y jq
 sudo apt-get install -y xsel
+sudo apt-get install -y nginx
 
 
 # Removes existing
@@ -23,12 +24,17 @@ valet install
 ln -snf "$DOTFILES/configs/valet.json" "$HOME/.valet/config.json"
 
 
-# Instals Valet Dashboard
+# Checks Valet Dashboard
 export VALET_DASHBOARD="$HOME/.valet/Dashboard"
+
+if [ -d "$VALET_DASHBOARD" ]
+then
+  rm -rf "$VALET_DASHBOARD"
+fi
+
+
+# Instals Valet Dashboard
 git clone https://github.com/xartuu/valet-dashboard "$VALET_DASHBOARD"
-
-
-# Preparing Valet Dashboard
 git clone https://github.com/FortAwesome/Font-Awesome "$VALET_DASHBOARD/assets/fonts/fontawesome-free-5"
 
 
