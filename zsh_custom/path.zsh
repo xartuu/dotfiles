@@ -10,3 +10,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Dotfiles
 export DOTFILES="$HOME/.dotfiles"
+
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

@@ -12,7 +12,7 @@ nameserver 1.0.0.2
 EOF
 # Makes the file immutable and won't be overwritten next time you start wsl
 # Use `sudo chattr -i /etc/resolv.conf` to edit this file again
-sudo chattr +i /etc/resolv.conf 
+sudo chattr +i /etc/resolv.conf
 
 
 # Updates and installs basic packages
@@ -21,3 +21,6 @@ sudo apt-get install -y zip
 sudo apt-get install -y unzip
 sudo apt-get install -y git
 sudo apt-get install -y openssh-client
+
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
