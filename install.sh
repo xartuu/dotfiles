@@ -9,9 +9,11 @@ then
   git clone https://github.com/artuupl/dotfiles.git $DOTFILES
 fi
 
+# Paths
+. "$DOTFILES/zsh_custom/path.zsh"
 
 # Runs scripts
-chmod +x -R $DOTFILES/scripts
+sudo chmod -R +x $DOTFILES/scripts
 $DOTFILES/scripts/setup.sh # Changes settings and installs needed packages
 $DOTFILES/scripts/folders.sh # Creates folders
 $DOTFILES/scripts/shortcuts.sh # Creates shortcuts

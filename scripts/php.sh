@@ -41,7 +41,6 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === file_get_contents('htt
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv -f "composer.phar" "/usr/local/bin/composer"
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 
 # Takeout

@@ -16,8 +16,6 @@ fi
 
 # Installs Valet
 composer global require valeryan/valet-wsl
-export valet="$HOME/.config/composer/vendor/bin/valet"
-
 valet install
 
 
