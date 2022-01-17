@@ -21,6 +21,8 @@ sudo apt-get install -y zip
 sudo apt-get install -y unzip
 sudo apt-get install -y git
 sudo apt-get install -y openssh-client
+sudo apt-get install -y gcc
+sudo apt-get install -y build-essential
 
 # Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+yes "" | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
