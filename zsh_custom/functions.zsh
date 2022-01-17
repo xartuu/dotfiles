@@ -51,11 +51,11 @@ function phpversion() {
 # Manages databases
 alias db="database"
 function database {
-    if [ "$1" = "refresh" ] || [ "$1" = "r" ]; then
+    if [ "$1" = "reset" ] || [ "$1" = "refresh" ] || [ "$1" = "r" ]; then
         mysql -uroot -e "drop database $2; create database $2"
-    elif [ "$1" = "create" ] || [ "$1" = "c" ]; then
+    elif [ "$1" = "create" ] || [ "$1" = "add" ] || [ "$1" = "c" ]; then
         mysql -uroot -e "create database $2"
-    elif [ "$1" = "drop" ] || [ "$1" = "d" ]; then
+    elif [ "$1" = "drop" ] || [ "$1" = "delete" ] || [ "$1" = "remove" ] || [ "$1" = "d" ]; then
         mysql -uroot -e "drop database $2"
     fi
 }
