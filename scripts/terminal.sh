@@ -28,7 +28,7 @@ ln -snf "$DOTFILES/zsh_custom/"*".zsh" "$ZSH_CUSTOM"
 
 ## Starship
 ln -snf "$DOTFILES/configs/starship.toml" "$HOME/.config/starship.toml"
-command -v starship >/dev/null 2>&1 || sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --force
+command -v starship > /dev/null 2>&1 || sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --force
 
 ## Spaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
