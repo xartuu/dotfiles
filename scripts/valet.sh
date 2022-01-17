@@ -11,6 +11,7 @@ sudo apt-get install -y nginx
 # Removes existing
 if [ -d "$HOME/.valet" ]
 then
+  valet stop
   rm -rf "$HOME/.valet"
 fi
 
@@ -24,16 +25,8 @@ valet install
 ln -snf "$DOTFILES/configs/valet.json" "$HOME/.valet/config.json"
 
 
-# Checks Valet Dashboard
-export VALET_DASHBOARD="$HOME/.valet/Dashboard"
-
-if [ -d "$VALET_DASHBOARD" ]
-then
-  rm -rf "$VALET_DASHBOARD"
-fi
-
-
 # Instals Valet Dashboard
+export VALET_DASHBOARD="$HOME/.valet/Dashboard"
 git clone https://github.com/xartuu/valet-dashboard "$VALET_DASHBOARD"
 git clone https://github.com/FortAwesome/Font-Awesome "$VALET_DASHBOARD/assets/fonts/fontawesome-free-5"
 
