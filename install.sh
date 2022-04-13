@@ -6,7 +6,7 @@ export DOTFILES="$HOME/.dotfiles"
 # Clone dotfiles repo
 if [ ! -d "$DOTFILES" ]
 then
-  git clone https://github.com/artuupl/dotfiles.git $DOTFILES
+  git clone https://github.com/xartuu/dotfiles.git $DOTFILES
 fi
 
 # Paths
