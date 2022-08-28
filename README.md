@@ -30,4 +30,4 @@ Copyright © 2021 [Artuu](https://github.com/xartuu).<br /> This project is [MIT
 
 ---
 
-_Setup created by [@xArtuu](https://github.com/xartuu), come to my website [artuu.pl](https://artuu.pl)!_
+_Setup created by [Artuu](https://github.com/xartuu), come to my website [artuu.me](https://artuu.me)!_
